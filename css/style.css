@@ -707,7 +707,19 @@ img {
   border-radius: 4px;
   padding: 40px;
 }
-
+.icon-close {
+  transition-property: fill;
+  transition-duration: var(--td);
+  transition-timing-function: var(--tf);
+}
+.icon-close {
+  transition-property: color;
+  transition-duration: var(--td);
+  transition-timing-function: var(--tf);
+}
+.icon-close:hover {
+  fill: var(--accent-color);
+}
 .modal-close-btn {
   width: 30px;
   height: 30px;
@@ -806,6 +818,8 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--under-color);
+  margin-left: auto;
+  margin-right: auto;
 }
 .modal-form-checkbox-policy::before {
   content: "";
